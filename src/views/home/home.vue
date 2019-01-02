@@ -69,7 +69,7 @@
         </div>
       </div>
     </row>
-    <div class="m-portlet">
+    <div class="m-portlet" style="margin-bottom:15px;">
       <div class="m-portlet__body">
         <row class='project'>
           <div class="col-xl-4">
@@ -84,6 +84,15 @@
         </row>
       </div>
     </div>
+    <row>
+       <div class="col-xl-4">
+         <card-box-one></card-box-one>
+       </div>
+       <div class="col-xl-4">
+         <card-box-two></card-box-two>
+       </div>
+       <div class="col-xl-4"></div>
+    </row>
   </div>
 </template>
 
@@ -96,6 +105,8 @@ import piechart from 'src/components/PieChart'
 import VProjectOne from 'src/components/Project/ProjectOne'
 import VProjectTwo from 'src/components/Project/projectTwo'
 import VProjectThr from 'src/components/Project/ProjectThr'
+import CardBoxOne from 'src/components/cardBox/cradBoxOne'
+import CardBoxTwo from 'src/components/cardBox/cardBoxTwo'
 export default {
   name: 'home',
   components:{
@@ -106,7 +117,9 @@ export default {
     piechart,
     VProjectOne,
     VProjectTwo,
-    VProjectThr
+    VProjectThr,
+    CardBoxOne,
+    CardBoxTwo
   },
   data(){
     return{

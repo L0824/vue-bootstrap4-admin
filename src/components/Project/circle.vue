@@ -63,7 +63,7 @@ export default {
               z:2,
               zlevel:100,
               style:{
-                  text:"类型",
+                  text:" ",
                   textAlign:"center",
                   fill:"#000",
                   fontSize: '100%'
