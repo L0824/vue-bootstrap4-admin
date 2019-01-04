@@ -101,6 +101,12 @@
 </script>
 
 <style>
+@media (min-width: 1025px){
+	.m-portlet-body,.m-portlet--body {
+	    height: calc(100% - 2.2rem - 2.2rem);
+	}
+}
+
 .m-widget28__pic{
 	background-color: #5075E4;
 	position: relative;

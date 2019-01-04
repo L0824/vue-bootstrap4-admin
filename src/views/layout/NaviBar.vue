@@ -276,9 +276,8 @@ export default {
   background-color: transparent;
 }
 .navbar-nav>li>a {
-    padding-top: 25px;
-    padding-bottom: 15px;
     height: 70px;
+    display: inline-block;
   }
 .navbar-custom-menu>.navbar-nav>li{
   padding-right: 30px;

@@ -71,7 +71,6 @@ import Card from './card'
 	    padding: 0 22px;
 	    color: #575962;
 	    margin-top: -66px;
-	    height:300px;
 	    width: 100%;
 	}
 	.m-widget-one{
@@ -111,5 +110,8 @@ import Card from './card'
 	.decPro{
 		width: 100%;
 		padding: 20px 22px;
+	}
+	.nav.nav-pills{
+		padding-top: 20px;
 	}
 </style>

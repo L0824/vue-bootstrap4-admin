@@ -91,7 +91,17 @@
        <div class="col-xl-4">
          <card-box-two></card-box-two>
        </div>
-       <div class="col-xl-4"></div>
+       <div class="col-xl-4">
+         <card-box-thr></card-box-thr>
+       </div>
+    </row>
+    <row>
+      <div class="col-xl-6 col-lg-12">
+        <active :activeArr='activeArr'></active>
+      </div>
+      <div class="col-xl-6 col-lg-12">
+        <task :taskArr='taskArr'></task>
+      </div>
     </row>
   </div>
 </template>
@@ -107,6 +117,9 @@ import VProjectTwo from 'src/components/Project/projectTwo'
 import VProjectThr from 'src/components/Project/ProjectThr'
 import CardBoxOne from 'src/components/cardBox/cradBoxOne'
 import CardBoxTwo from 'src/components/cardBox/cardBoxTwo'
+import CardBoxThr from 'src/components/cardBox/cardBoxThr'
+import Active from "../layout/active/active"
+import Task from "../layout/active/task"
 export default {
   name: 'home',
   components:{
@@ -119,7 +132,10 @@ export default {
     VProjectTwo,
     VProjectThr,
     CardBoxOne,
-    CardBoxTwo
+    CardBoxTwo,
+    CardBoxThr,
+    Active,
+    Task
   },
   data(){
     return{
@@ -143,6 +159,82 @@ export default {
            number:"22,000",
            color:'colorThr'
          }
+      ],
+      taskArr:[
+       {
+        time:'09:00',
+        className:'line-info',
+        desc:' Lorem ipsum dolor sit amit,consectetur eiusmdd tempor ',
+        user:'By Bob'
+       },
+       {
+        time:'10:00',
+        className:'line-warn',
+        desc:' Lorem ipsum dolor sit amit',
+        user:'By Sram'
+       },
+       {
+        time:'11:00',
+        className:'line-succes',
+        desc:' Lorem ipsum dolor',
+        user:'By Lay'
+       },
+       {
+        time:'13:00',
+        className:'line-danger',
+        desc:' Good Good study,Day Day Up',
+        user:'By JJ'
+       },
+       {
+        time:'14:00',
+        className:'line-info',
+        desc:' Lorem ipsum dolor sit amit,consectetur eiusmdd tempor ',
+        user:'By Bob'
+       },
+       {
+        time:'15:00',
+        className:'line-warn',
+        desc:' Lorem ipsum dolor sit amit',
+        user:'By Sram'
+       },
+       {
+        time:'18:00',
+        className:'line-danger',
+        desc:' Good Good study,Day Day Up',
+        user:'By JJ'
+       }
+      ],
+      activeArr:[
+        {
+          className:'line-info',
+          desc:'Make Metronic Great Again.Lorem Ipsum Amet',
+          user:'By JJ'
+        },
+        {
+          className:'line-danger',
+          desc:'Placed a new order in SIGNATURE MOBILE marketplace.',
+          user:'By Kimi'
+        },
+        {
+          className:'line-succes',
+          desc:'Production server up',
+          user:'By LOG'
+        },
+        {
+          className:'line-info',
+          desc:'Make Deposit USD 700 To ESL.',
+          user:'By baby'
+        },
+        {
+          className:'line-danger',
+          desc:'Make Metronic Great Again',
+          user:'By Lay'
+        },
+        {
+          className:'line-warn',
+          desc:'Completa Financial Report For Emirates Airlines',
+          user:'By Bob'
+        }
       ]
     }
   },
@@ -198,5 +290,23 @@ a:hover,a:active{
   }
   .colorThr{
     color: #34bfa3;
+  }
+  @media (min-width: 1025px){
+    .m-portlet__head{
+      height: calc(100% - 2.2rem);
+    }
+  }
+  @media (max-width: 1200px){
+    .col-xl-4{
+      margin-bottom: 15px;
+    }
+    .m-widget2,.m-widget {
+      border-bottom: 2px solid #f2f3f8;
+     border-left: none !important;
+   }
+   .m-widget3{
+     border-left: none !important;
+
+   }
   }
 </style>
