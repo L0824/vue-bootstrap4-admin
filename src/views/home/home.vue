@@ -46,29 +46,6 @@
        </model>
      </div>
     </row>
-    <row>
-      <div class="col-xl-4 ">
-         <v-user-box blog='Blog'> </v-user-box>
-      </div>
-      <div class="col-xl-4">
-        <v-card-info 
-          ProjectName='Project Name'
-          :des='des '
-        >
-        </v-card-info>
-      </div>
-      <div class="col-xl-4">
-        <div class="card">
-          <piechart></piechart>
-           <div class="links-light profile-card-footer card-footer">
-            <span class="right" style="text-align:center;display:inline-block;">
-              <a href="" class="p-a" >More Info Charts</a>
-              <i class="fa fa-photo"></i>
-            </span>
-          </div>
-        </div>
-      </div>
-    </row>
     <div class="m-portlet" style="margin-bottom:15px;">
       <div class="m-portlet__body">
         <row class='project'>
@@ -103,15 +80,20 @@
         <task :taskArr='taskArr'></task>
       </div>
     </row>
+    <row>
+      <div class="col-xl-9">
+         <v-table></v-table>
+      </div>
+      <div class="col-xl-3">
+        <!-- <to-do-list></to-do-list> -->
+      </div>
+    </row>
   </div>
 </template>
 
 <script>
-import VUserBox from 'src/components/UserBox'
 import Model from 'src/components/Model'
-import VCardInfo from 'src/components/CardInfo'
 import ToDoList from 'src/components/TodoList/index'
-import piechart from 'src/components/PieChart'
 import VProjectOne from 'src/components/Project/ProjectOne'
 import VProjectTwo from 'src/components/Project/projectTwo'
 import VProjectThr from 'src/components/Project/ProjectThr'
@@ -120,14 +102,12 @@ import CardBoxTwo from 'src/components/cardBox/cardBoxTwo'
 import CardBoxThr from 'src/components/cardBox/cardBoxThr'
 import Active from "../layout/active/active"
 import Task from "../layout/active/task"
+import VTable from "src/components/table/index"
 export default {
   name: 'home',
   components:{
-  	VUserBox,
     Model,
-    VCardInfo,
     ToDoList,
-    piechart,
     VProjectOne,
     VProjectTwo,
     VProjectThr,
@@ -135,11 +115,11 @@ export default {
     CardBoxTwo,
     CardBoxThr,
     Active,
-    Task
+    Task,
+    VTable
   },
   data(){
     return{
-      des:'Some quick example text to build on the card title and make up the bulk of the cards content.',
       widgetArr:[
          {
            title:'Member Profit',

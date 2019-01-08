@@ -111,7 +111,7 @@
 }
 .line-act{
    width: 3px;
-   height: 45px;
+   height: 40px;
    position: absolute;
 }
 .act_text{
@@ -121,9 +121,9 @@
 	display: inline-block !important;
 }
 .form-check-input {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     margin-left: 17px;
-    top: 8px;
+    top: 6px;
 }
 </style>

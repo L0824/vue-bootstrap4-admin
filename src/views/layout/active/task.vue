@@ -51,7 +51,7 @@ import 'src/lib/task'
 <style>
 .m-timeline__item{
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 .m-timeline__item-time{
 	display: table-cell;
@@ -62,6 +62,7 @@ import 'src/lib/task'
     position: absolute;
     text-align: right;
     width: 3.57rem;
+    color: #898b96;
 }
 .m-timeline__item-desc{
 	display: table-cell;
@@ -71,7 +72,7 @@ import 'src/lib/task'
     padding-left: 7rem;
 }
 .m-timeline__item-text{
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 }
 .m-timeline__item-user-name a{

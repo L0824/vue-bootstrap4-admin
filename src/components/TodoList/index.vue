@@ -118,8 +118,6 @@ export default {
   line-height: 1.4em;
   color: #4d4d4d;
   margin: 0 auto ;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-weight: 300;
   background: #fff;
   z-index: 1;
@@ -137,8 +135,6 @@ export default {
     color: inherit;
     -webkit-appearance: none;
     appearance: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
   :focus {
     outline: 0;
@@ -147,7 +143,6 @@ export default {
     display: none;
   }
   .todoapp {
-    margin-top: 15px;
     background: #fff;
     position: relative;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);

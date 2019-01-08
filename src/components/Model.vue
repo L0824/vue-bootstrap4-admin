@@ -73,6 +73,7 @@ export default {
 .card-body {
   flex: 1 1 auto;
   padding: 1.25rem;
+  padding-top: 0;
 }
 
 .progress {
@@ -82,6 +83,7 @@ export default {
   font-size: .75rem;
   background-color: #e9ecef;
   border-radius: .25rem;
+  margin-bottom: 8px;
 }
 
 .card-text {
