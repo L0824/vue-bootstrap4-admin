@@ -81,11 +81,8 @@
       </div>
     </row>
     <row>
-      <div class="col-xl-9">
+      <div class="col-xl-12">
          <v-table></v-table>
-      </div>
-      <div class="col-xl-3">
-        <!-- <to-do-list></to-do-list> -->
       </div>
     </row>
   </div>

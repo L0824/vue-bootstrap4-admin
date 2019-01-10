@@ -34,6 +34,6 @@ import VTableData from './table'
 		border-bottom: 1px solid #ebedf2;
 	}
 	.m-portlet__body{
-		padding:22px 22px ;
+		padding:22px 30px ;
 	}
 </style>

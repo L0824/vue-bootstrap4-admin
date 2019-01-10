@@ -6,21 +6,21 @@ module.exports = [
   },
   {
     type: 'item',
-    icon: 'fa fa-dashboard',
-    name: '首页',
+    icon: 'fa fa-home',
+    name: 'Home',
     router: {
       name: 'home'
     }
   },
   {
     type: 'tree',
-    icon: 'fa fa-files-o',
-    name: '控件'
+    icon: 'fa fa-edit',
+    name: 'Forms'
   },
   {
     type: 'tree',
-    icon: 'fa fa-laptop',
-    name: '组件',
+    icon: 'fa fa-clone',
+    name: 'Page',
     items: [
       {
         type: 'item',
@@ -50,8 +50,8 @@ module.exports = [
   },
   {
     type: 'tree',
-    icon: 'fa fa-edit',
-    name: '表格',
+    icon: 'fa fa-table',
+    name: 'Table',
     items: [
       {
         type: 'item',
@@ -66,12 +66,12 @@ module.exports = [
   {
     type: 'tree',
     icon: 'fa fa-pie-chart',
-    name: '图标'
+    name: 'Icons'
   },
   {
     type: 'tree',
     icon: 'fa fa-map',
-    name: '地图',
+    name: 'Map',
     items: [
       {
         type: 'item',
