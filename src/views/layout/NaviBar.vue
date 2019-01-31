@@ -324,4 +324,8 @@ export default {
      margin-top: -5px;
   }
 }
+
+.navbar-nav>.user-menu>.dropdown-menu>.user-body{
+  padding: 0 30px;
+}
 </style>

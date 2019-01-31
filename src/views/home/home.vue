@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <!-- 头部 -->
     <row>
      <div class="col-lg-3 col-xs-6">
        <model
@@ -46,6 +47,7 @@
        </model>
      </div>
     </row>
+    <!-- list -->
     <div class="m-portlet" style="margin-bottom:15px;">
       <div class="m-portlet__body">
         <row class='project'>
@@ -61,6 +63,7 @@
         </row>
       </div>
     </div>
+    <!-- 三大项目 -->
     <row>
        <div class="col-xl-4">
          <card-box-one></card-box-one>
@@ -72,6 +75,7 @@
          <card-box-thr></card-box-thr>
        </div>
     </row>
+    <!-- 时间线 -->
     <row>
       <div class="col-xl-6 col-lg-12">
         <active :activeArr='activeArr'></active>
@@ -80,6 +84,7 @@
         <task :taskArr='taskArr'></task>
       </div>
     </row>
+    <!-- 表格 -->
     <row>
       <div class="col-xl-12">
          <v-table></v-table>
@@ -90,7 +95,6 @@
 
 <script>
 import Model from 'src/components/Model'
-import ToDoList from 'src/components/TodoList/index'
 import VProjectOne from 'src/components/Project/ProjectOne'
 import VProjectTwo from 'src/components/Project/projectTwo'
 import VProjectThr from 'src/components/Project/ProjectThr'
@@ -104,7 +108,6 @@ export default {
   name: 'home',
   components:{
     Model,
-    ToDoList,
     VProjectOne,
     VProjectTwo,
     VProjectThr,
@@ -216,74 +219,6 @@ export default {
     }
   },
   methods: {
-
-
   }
 }
-
 </script>
-
-<style>
-a:hover,a:active{
-  text-decoration: none !important;
-}
-.fa-line-chart{
-  background-color: #ffbb33 !important;
-}
-.fa-money{
-  background-color: #4285f4 !important;
-}
-.modle .fa-pie-chart{
-  background-color: #29b6f6 !important;
-}
-.fa-bar-chart{
-  background-color: #ff5252 !important;
-}
-.bg-primary {
-    background-color: #4285f4 !important;
-}
-.bg-grey{
-  background-color: #616161 !important;
-}
-.card{
-   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  }
-  .m-portlet{
-    box-shadow: 0px 1px 15px 1px rgba(69,65,78,0.08);
-    background-color: #fff;
-  }
-  .m-portlet__body{
-    color: #575962;
-  }
-  .project{
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .color{
-    color: #716aca;
-  }
-  .colorTwo{
-    color: #f4516c;
-  }
-  .colorThr{
-    color: #34bfa3;
-  }
-  @media (min-width: 1025px){
-    .m-portlet__head{
-      height: calc(100% - 2.2rem);
-    }
-  }
-  @media (max-width: 1200px){
-    .col-xl-4{
-      margin-bottom: 15px;
-    }
-    .m-widget2,.m-widget {
-      border-bottom: 2px solid #f2f3f8;
-     border-left: none !important;
-   }
-   .m-widget3{
-     border-left: none !important;
-
-   }
-  }
-</style>

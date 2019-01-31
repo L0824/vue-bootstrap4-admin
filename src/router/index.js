@@ -3,13 +3,12 @@ import Router from 'vue-router'
 
 import layout from 'src/views/layout/Layout'
 
-// UI Element Groups
-import Sliders from 'pages/ui-elements/Sliders.vue'
-import Timeline from 'pages/ui-elements/Timeline.vue'
-import Modals from 'pages/ui-elements/Modals.vue'
-
+import Echart from 'src/views/echarts/Echart'
+import Tab from 'src/components/tab/tab'
+import Table from 'src/views/table/table'
+import ResourceForm  from 'src/views/forms/resourceForm'
 // forms
-import AdvancedElements from 'pages/forms/AdvancedElements.vue'
+
 
 Vue.use(Router)
 
@@ -27,24 +26,24 @@ export default new Router({
       component: () => import('src/views/home/home'),
     },
     {
-      path: '/ui-elements/sliders',
-      name: 'Sliders',
-      component: Sliders
+      path: '/views/table',
+      name: 'Table',
+      component: Table
     },
     {
-      path: '/ui-elements/timeline',
-      name: 'Timeline',
-      component: Timeline
+      path: '/views/echarts',
+      name: 'Echart',
+      component: Echart
     },
     {
-      path: '/ui-elements/modals',
-      name: 'Modals',
-      component: Modals
+      path: '/views/forms',
+      name: 'ResourceForm',
+      component: ResourceForm
     },
     {
-      path: '/forms/advanced-elements',
-      name: 'AdvancedElements',
-      component: AdvancedElements
+      path: '/tab/tab',
+      name: 'Tab',
+      component: Tab
     }
   ],
   linkActiveClass: 'active'

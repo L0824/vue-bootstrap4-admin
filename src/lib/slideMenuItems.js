@@ -15,35 +15,29 @@ module.exports = [
   {
     type: 'tree',
     icon: 'fa fa-edit',
-    name: 'Forms'
+    name: 'Forms',
+    items: [
+       {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'Resource Form',
+        router: {
+          name: 'ResourceForm'
+        }
+      }
+    ]
   },
   {
     type: 'tree',
-    icon: 'fa fa-clone',
-    name: 'Page',
+    icon: 'fa fa-bar-chart-o',
+    name: 'Echart',
     items: [
-      {
+       {
         type: 'item',
         icon: 'fa fa-circle-o',
-        name: 'Sliders',
+        name: 'Echart',
         router: {
-          name: 'Sliders'
-        }
-      },
-      {
-        type: 'item',
-        icon: 'fa fa-circle-o',
-        name: 'Timeline',
-        router: {
-          name: 'Timeline'
-        }
-      },
-      {
-        type: 'item',
-        icon: 'fa fa-circle-o',
-        name: 'Modals',
-        router: {
-          name: 'Modals'
+          name: 'Echart'
         }
       }
     ]
@@ -56,17 +50,20 @@ module.exports = [
       {
         type: 'item',
         icon: 'fa fa-circle-o',
-        name: '表格一',
+        name: 'tables',
         router: {
-          name: 'AdvancedElements'
+          name: 'Table'
+        }
+      },
+      {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'tab',
+        router: {
+          name: 'Tab'
         }
       }
     ]
-  },
-  {
-    type: 'tree',
-    icon: 'fa fa-pie-chart',
-    name: 'Icons'
   },
   {
     type: 'tree',

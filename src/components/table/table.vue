@@ -23,6 +23,7 @@
     <b-table show-empty
        stacked="md"
        :items="items"
+       :bordered="bordered"
        :fields="fields"
        :current-page="currentPage"
        :per-page="perPage"
@@ -110,19 +111,19 @@ const items = [
     Emil:'111123@qq.com',
     status:'在职',
     leader:'王总',
-    name: { first: 'Mini', last: 'Navarro' },
-    _rowVariant: 'success'
+    name: { first: 'Mini', last: 'Navarro' }
+    // _rowVariant: 'success'
   },
   { 
   	ID:'04',
-	isActive: false,
-	age: 89,
-	sex:'男',
-	phone:'15111066634',
+	  isActive: false,
+	  age: 89,
+	  sex:'男',
+	  phone:'15111066634',
     Emil:'123888@qq.com',
-	dep:'政府与公共服务事业部',
-	leader:'王总',
-	name: { first: 'Geneva', last: 'Wilson' } },
+	  dep:'政府与公共服务事业部',
+	  leader:'王总',
+	  name: { first: 'Geneva', last: 'Wilson' } },
   { 
   	ID:'05',
     isActive: true, 
@@ -136,7 +137,8 @@ const items = [
   { 
   	ID:'06',
     isActive: false, 
-    age: 27,dep:'政府与公共服务事业部',
+    age: 27,
+    dep:'政府与公共服务事业部',
     leader:'王总',
     phone:'15111066634',
     sex:'女',
@@ -147,7 +149,8 @@ const items = [
   { 
   	ID:'07',
     isActive: true, 
-    age: 40, dep:'政府与公共服务事业部',
+    age: 40, 
+    dep:'政府与公共服务事业部',
     leader:'王总',
     Emil:'128876543@qq.com',
     phone:'15111066634',
@@ -235,6 +238,7 @@ export default {
       sortDesc: false,
       sortDirection: 'asc',
       filter: null,
+      bordered: true,
       modalInfo: { title: '', content: '' }
     }
   },
@@ -294,14 +298,12 @@ tbody tr:hover{
 	border: 1px solid #ced4da;
   box-shadow: none !important;
 }
-table.b-table > thead > tr > th{
+table.b-table > thead > tr > th,.table>tfoot>tr>td{
   text-align: center;
 }
-table tr:last-child,.table td:last-child{
-  border:1px solid #f4f4f4;
+.table td{
+  vertical-align: inherit;
 }
-.table td,.table th{
-  border-left: 1px solid #f4f4f4;
-}
+
 
 </style>

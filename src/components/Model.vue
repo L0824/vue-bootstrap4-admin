@@ -42,13 +42,11 @@ export default {
   background-clip: border-box;
   border-radius: .25rem;
 }
-
 .admin-up {
   margin-left: 4%;
   margin-right: 4%;
   margin-top: -20px;
 }
-
 .cascading-admin-card .admin-up .fa {
   padding: 28px;
   font-size: 30px;
@@ -58,24 +56,20 @@ export default {
   border-radius: 3px;
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.2), 0 2px 13px 0 rgba(0, 0, 0, 0.19);
 }
-
 .cascading-admin-card .admin-up .data {
   float: right;
   margin-top: 2rem;
   text-align: right;
 }
-
 .admin-up .data p {
   color: #999999;
   font-size: 12px;
 }
-
 .card-body {
   flex: 1 1 auto;
   padding: 1.25rem;
   padding-top: 0;
 }
-
 .progress {
   display: flex;
   height: 1rem;
@@ -85,11 +79,9 @@ export default {
   border-radius: .25rem;
   margin-bottom: 8px;
 }
-
 .card-text {
   color: #747373;
   font-size: 14px;
   font-weight: 400;
 }
-
 </style>

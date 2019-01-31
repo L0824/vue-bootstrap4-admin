@@ -1,7 +1,7 @@
 import './lib/css'
 import './lib/script'
 import './lib/global'
-
+import './lib/style.css'
 import Vue from 'vue'
 import App from './App'
 import router from './router'

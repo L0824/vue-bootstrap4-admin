@@ -120,7 +120,11 @@ export default {
     top: -4px !important;
   }
 }
-
+.skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a {
+    color: #fff;
+    background: #1e282c;
+    border-left-color: #3c8dbc;
+}
 
  @media (max-width: 767px){
   .sidebar-menu>li.header,.sidebar-menu>li>a{
